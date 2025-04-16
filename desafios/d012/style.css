@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 @font-face {
     font-family: 'Xilosa';
@@ -8,7 +9,8 @@
 :root {
     --cor1: #F7AEB5;
     
-    --font-destaque: 'Xilosa';
+    --fonte-destaque: 'Xilosa', sans-serif;
+    --fonte-texto: "Handlee", cursive;
 }
 
 * {
@@ -28,13 +30,17 @@ header {
 }
 
 header > h1 {
-    font-family: var(--font-destaque);
+    font-family: var(--fonte-destaque);
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 8vw;
 }
 
 header > p {
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
     padding-bottom: 50px;
+    font-size: 2vw;
 }
 
 header a, footer a {
@@ -57,6 +63,9 @@ section {
     padding-bottom: 10vh;
     line-height: 1.5em;
     padding-left: 30px;
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    font-size: 3.5vw;
 }
 
 section.imagem {
@@ -65,13 +74,26 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.389);
 }
 
 footer {
+    font-family: var(--fonte-texto);    
+    font-weight: bold;
     background-color: var(--cor1);
     color: black;
     text-align: center;
     padding: 10px 0px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
