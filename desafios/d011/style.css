@@ -1,0 +1,22 @@
+#container {
+    position: relative;
+    height: 100vh;
+    background-image: url('imagens/espaco.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content {
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('imagens/astronauta.png');
+
+    height: 70vh;
+    width: 70vh;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
