@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Xilosa';
+    src: url('font/xilosa_.ttf') format('truetype');
+}
+
+:root {
+    --cor1: #F7AEB5;
+    
+    --font-destaque: 'Xilosa';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: var(--cor1);
+    color: black;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font-destaque);
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white    ;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+}
+
+section.imagem {
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.389);
+}
+
+footer {
+    background-color: var(--cor1);
+    color: black;
+    text-align: center;
+    padding: 10px 0px;
+}
