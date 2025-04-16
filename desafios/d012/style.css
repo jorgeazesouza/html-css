@@ -33,14 +33,14 @@ header > h1 {
     font-family: var(--fonte-destaque);
     padding-top: 50px;
     font-variant: small-caps;
-    font-size: 8vw;
+    font-size: 4em;
 }
 
 header > p {
     font-family: var(--fonte-texto);
     font-weight: bolder;
     padding-bottom: 50px;
-    font-size: 2vw;
+    font-size: 1.5em;
 }
 
 header a, footer a {
@@ -65,18 +65,36 @@ section {
     padding-left: 30px;
     font-family: var(--fonte-texto);
     font-weight: bolder;
-    font-size: 3.5vw;
+    font-size: 3em;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.imagem {
     background-color: rgb(35, 35, 35);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.493);
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.389);
+    background-color: rgba(0, 0, 0, 0.238);
+    text-shadow: 2px 2px 2px black;
+}
+
+section#img01 {
+    background-size: cover;
+    background-position: center center;
+    background-image: url('imagens/background001.jpg');
+}
+
+section#img02 {
+    background-size: cover;
+    background-image: url('imagens/background002.jpg');
 }
 
 footer {
@@ -96,4 +114,23 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+    section {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    header > h1 {
+        font-size: 3em;
+    }
+    header > p {
+        font-size: 1em;
+    }
+    
+    footer {
+        font-size: 14px;
+    }
 }
